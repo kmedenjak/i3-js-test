@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pitanje 4</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="java.js"></script>
+</head>
+<body>
+    <h1>PITANJE 4</h1>
+    <button id="previousButton" class="nextButton" onclick="window.location.href='slide3.html'">Previous</button>
+    <form onclick="selectedAnswers()" action="proba.html">
+        <button class="nextButton" id="showResults" onclick="buttonDisable()">Show results</button>
+    </form>
+        
+
+    
+<nav>
+    <ul>
+        <li onclick="selectedAnswers()" ><a id="nav1" href="slide1.html">1</a> </li>
+        <li onclick="selectedAnswers()" ><a id="nav2" href="slide2.html">2</a> </li>
+        <li onclick="selectedAnswers()" ><a id="nav3" href="slide3.html">3</a> </li>
+        <li onclick="selectedAnswers()" ><a id="nav4" class="odabrano" href="slide4.html">4</a> </li>
+    </ul> 
+</nav>
+
+<div class="grid" id="ans">
+    <div class="gumb">
+        <input id="1" value="1" class="click" type="checkbox"/>
+        <label for="1">1</label>
+    </div>
+    <div class="gumb">
+        <input id="2" value="2" class="click" type="checkbox"/>
+        <label for="2">2</label>
+    </div>
+    <div class="gumb">
+        <input id="3" value="3" class="click" type="checkbox"/>
+        <label for="3">3</label>
+    </div>
+    <div class="gumb">
+        <input id="4" value="4" class="click" type="checkbox"/>
+        <label for="4">4</label>
+    </div>
+    <div class="gumb">
+        <input id="5" value="5" class="click" type="checkbox"/>
+        <label for="5">5</label>
+    </div>
+    <div class="gumb">
+        <input id="6" value="6" class="click" type="checkbox"/>
+        <label for="6">6</label>
+    </div>
+    <div class="gumb">
+        <input id="7" value="7" class="click" type="checkbox"/>
+        <label for="7">7</label>
+    </div>
+    <div class="gumb">
+        <input id="8" value="8" class="click" type="checkbox"/>
+        <label for="8">8</label>
+    </div>
+</div>
+
+<script>
+    window.addEventListener('load', (event) => {
+    buttonDisable();
+});
+</script>
+
+</body>
+</html> 
